@@ -6,7 +6,7 @@ rounds = int(input("How many round?"))
 score1 = 0
 score2 = 0
 score3 = 0
-for i in range(1, round + 1):
+for i in range(1, rounds + 1):
     print("\nRound", i)
     p1 = int(input(p1_name + "(1:(paper),2:(stone),3:(scissore):"))
     p2 = int(input(p2_name + "(1:(paper),2:(stone),3:(scissore):"))
