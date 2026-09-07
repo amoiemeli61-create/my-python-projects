@@ -2,7 +2,7 @@ print("welcome to the game")
 p1_name = input("Enter player 1 name:")
 p2_name = input("Enter player 2 name:")
 p3_name = input("Enter player 3 name:")
-round = int(input("How many round?"))
+rounds = int(input("How many round?"))
 score1 = 0
 score2 = 0
 score3 = 0
