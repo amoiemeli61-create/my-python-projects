@@ -8,9 +8,9 @@ score2 = 0
 score3 = 0
 for i in range(1, rounds + 1):
     print("\nRound", i)
-    p1 = int(input(p1_name + "(1:(paper),2:(stone),3:(scissore):"))
-    p2 = int(input(p2_name + "(1:(paper),2:(stone),3:(scissore):"))
-    p3 = int(input(p3_name + "(1:(paper),2:(stone),3:(scissore):"))
+    p1 = int(input(p1_name + "(1:(paper),2:(stone),3:(scissores):"))
+    p2 = int(input(p2_name + "(1:(paper),2:(stone),3:(scissores):"))
+    p3 = int(input(p3_name + "(1:(paper),2:(stone),3:(scissores):"))
     if (
         (p1 == 1 and p2 == 2 and p3 == 2)
         or (p1 == 3 and p2 == 1 and p3 == 1)
@@ -33,7 +33,7 @@ for i in range(1, rounds + 1):
         score3 += 1
         print(p3_name, "wins")
     else:
-        print("Draw or complex")
+        print("Draw or complex win!")
 print("\n Final score")
 print(p1_name, ":", score1)
 print(p2_name, ":", score2)
