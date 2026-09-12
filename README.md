@@ -4,6 +4,12 @@ My first Python learning projects.
 
 ## Projects
 
+- [Simple Calculator](#simple-calculator)
+- [Rock Paper Scissors](#rock-paper-scissors)
+- [Temperature Converter](#temperature-converter)
+
+---
+
 ### Simple Calculator
 
 A calculator built with Python that supports:
@@ -23,6 +29,8 @@ Features:
 
 This project was created to practice Python programming fundamentals.
 
+---
+
 ### Rock Paper Scissors
 
 A multiplayer Rock Paper Scissors game built with Python.
@@ -40,6 +48,8 @@ This project was created to practice:
 - Loops
 - User input
 - Game logic
+
+---
 
 ### Temperature Converter
 
