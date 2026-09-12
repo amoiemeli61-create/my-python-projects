@@ -14,9 +14,8 @@ A calculator built with Python that supports:
 - Division (/)
 - Floor Division (//)
 - Modulus (%)
-- Power (^)
-- Comparison Operators:
-  >, <, >=, <=, ==, !=
+- Power (**)
+- Comparison Operators: >, <, >=, <=, ==, !=
 
 Features:
 - Division by zero handling
