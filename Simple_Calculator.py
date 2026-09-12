@@ -8,7 +8,7 @@ elif ch == "-":
     result = a - b
 elif ch == "*":
     result = a * b
-elif ch == "^":
+elif ch == "**":
     result = a**b
 elif ch == "/":
     if b == 0:
