@@ -1,12 +1,11 @@
-# my-python-projects
-My first Python projects
 # My Python Projects
 
-My Python learning projects.
+My first Python learning projects.
 
 ## Projects
 
 ### Simple Calculator
+
 A calculator built with Python that supports:
 
 - Addition (+)
@@ -24,8 +23,6 @@ Features:
 - Invalid operator handling
 
 This project was created to practice Python programming fundamentals.
-
-
 
 ### Rock Paper Scissors
 
@@ -45,5 +42,20 @@ This project was created to practice:
 - User input
 - Game logic
 
+### Temperature Converter
 
+A simple temperature converter built with Python.
 
+Features:
+- Temperature classification (Cold, Moderate, Hot)
+- Celsius to Fahrenheit conversion
+- Fahrenheit to Celsius conversion
+- User-friendly input system
+- Invalid unit handling
+
+This project was created to practice:
+- Variables
+- if / elif / else
+- User input
+- Mathematical formulas
+- Temperature conversion
