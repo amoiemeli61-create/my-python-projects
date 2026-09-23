@@ -1,70 +1,102 @@
-# My Python Projects
+# My Python Projects 🐍
 
-My first Python learning projects.
+سلام! اینجا مجموعه‌ای از پروژه‌های پایتون منه که توی مسیر یادگیری برنامه‌نویسی نوشتم.
 
-## Projects
+هر پروژه یه قدم جدید توی یادگیری من بوده — از مفاهیم ساده تا چیزهای چالشی‌تر.
 
-- [Simple Calculator](#simple-calculator)
-- [Rock Paper Scissors](#rock-paper-scissors)
-- [Temperature Converter](#temperature-converter)
+## پروژه‌ها
 
----
-
-### Simple Calculator
-
-A calculator built with Python that supports:
-
-- Addition (+)
-- Subtraction (-)
-- Multiplication (*)
-- Division (/)
-- Floor Division (//)
-- Modulus (%)
-- Power (**)
-- Comparison Operators: >, <, >=, <=, ==, !=
-
-Features:
-- Division by zero handling
-- Invalid operator handling
-
-This project was created to practice Python programming fundamentals.
+- [ماشین‌حساب ساده](#simple-calculator)
+- [سنگ، کاغذ، قیچی](#rock-paper-scissors)
+- [تبدیل دما](#temperature-converter)
+- [دفترچه تلفن](#contacts-app)
 
 ---
 
-### Rock Paper Scissors
+### Simple Calculator 🧮
 
-A multiplayer Rock Paper Scissors game built with Python.
+یه ماشین‌حساب با پایتون که این عملیات رو پشتیبانی می‌کنه:
 
-Features:
-- Supports 3 players
-- Multiple rounds
-- Score tracking system
-- Automatic winner detection
-- Final score display
+- جمع (+)
+- تفریق (-)
+- ضرب (*)
+- تقسیم (/)
+- تقسیم صحیح (//)
+- باقی‌مانده (%)
+- توان (**)
+- عملگرهای مقایسه: `>`, `<`, `>=`, `<=`, `==`, `!=`
 
-This project was created to practice:
-- Variables
-- if / elif / else
-- Loops
-- User input
-- Game logic
+**امکانات ویژه:**
+- مدیریت تقسیم بر صفر
+- مدیریت عملگر نامعتبر
+
+این پروژه برای تمرین مبانی پایتون ساخته شده.
 
 ---
 
-### Temperature Converter
+### Rock Paper Scissors ✊✋✌️
 
-A simple temperature converter built with Python.
+یه بازی سنگ، کاغذ، قیچی چند نفره.
 
-Features:
-- Temperature classification (Cold, Moderate, Hot)
-- Celsius to Fahrenheit conversion
-- Fahrenheit to Celsius conversion
-- User-friendly input system
-- Invalid unit handling
+**امکانات:**
+- پشتیبانی از ۳ بازیکن
+- چند دور بازی
+- سیستم امتیازدهی
+- تشخیص خودکار برنده
+- نمایش امتیاز نهایی
 
-This project was created to practice:
-- Variables
-- if / elif / else
-- User input
-- Mathematical formulas
-- Temperature conversion
+**مفاهیمی که تمرین شد:**
+- متغیرها
+- `if / elif / else`
+- حلقه‌ها
+- ورودی کاربر
+- منطق بازی
+
+---
+
+### Temperature Converter 🌡️
+
+یه مبدل دما ساده.
+
+**امکانات:**
+- دسته‌بندی دما (سرد، معتدل، گرم)
+- تبدیل سلسیوس به فارنهایت
+- تبدیل فارنهایت به سلسیوس
+- ورودی کاربرپسند
+- مدیریت واحد نامعتبر
+
+**مفاهیمی که تمرین شد:**
+- متغیرها
+- `if / elif / else`
+- ورودی کاربر
+- فرمول‌های ریاضی
+- تبدیل دما
+
+---
+
+### Contacts App 📞
+
+یه برنامه‌ی دفترچه تلفن با پایتون.
+
+**امکانات:**
+- اضافه کردن مخاطب
+- جستجوی مخاطب
+- حذف مخاطب
+- ویرایش مخاطب (اسم یا شماره)
+- خروج از برنامه
+
+**مفاهیمی که تمرین شد:**
+- لیست‌ها
+- حلقه‌ها
+- `if / elif / else`
+- پرچم `True / False`
+- ورودی کاربر
+
+---
+
+## چطور اجرا کنم؟
+
+هر فایل پایتون رو با این دستور اجرا کن:
+
+python contact.py
+melika🎀
