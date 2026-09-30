@@ -101,5 +101,5 @@ python contact.py
 
 ---
 
-# Melika🎀
+# Melika
 اگه دوست داشتی ستاره بده⭐
