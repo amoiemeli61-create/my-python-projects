@@ -1,7 +1,6 @@
 # ===تنظیمات اولیه===
 import datetime
 import json
-
 orders = []
 purchase_list = []
 save_total = []
