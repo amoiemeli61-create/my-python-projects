@@ -1,6 +1,5 @@
 # ===تنظیمات اولیه===
 import datetime
-import json
 orders = []
 purchase_list = []
 save_total = []
@@ -37,9 +36,7 @@ while True:
         "\n"
         "4.Report Profit/Loss"
         "\n"
-        "5.Save to File"
-        "\n"
-        "6.Exit"
+        "5.Exit"
     )
     choice = int(input("Enter your choice? "))
 
@@ -292,12 +289,6 @@ while True:
             if report == 5:
                 break
 
-    # ===ذخیره در فایل===
-    if choice == 5:
-        save_file = [products, customers, orders]
-        with open("hesabyar.json", "w") as file:
-            json.dump(save_file, file, default=str)
-
     # ===خروج===
-    if choice == 6:
+    if choice == 5:
         break
