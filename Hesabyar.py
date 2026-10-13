@@ -141,9 +141,7 @@ while True:
                         Settlement_Date,
                     ]
                     customers.append(save_customer)
-                    exit_customers = input(
-                        "Do you want to add another customer? (y/n): "
-                    )
+                    exit_customers = input("Do you want to add another customer? (y/n): ")
                     if exit_customers == "n":
                         break
 
