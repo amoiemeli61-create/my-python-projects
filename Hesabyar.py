@@ -34,7 +34,7 @@ while True:
         "\n"
         "3.Register order"
         "\n"
-        "4.Report Profit/Loss"
+        "4.Report"
         "\n"
         "5.Exit"
     )
@@ -236,7 +236,7 @@ while True:
             if order_choice == 5:
                 break
 
-    # ===گزارش سود و زیان===
+    # ===گزارش ها===
     if choice == 4:
         while True:
             print(
