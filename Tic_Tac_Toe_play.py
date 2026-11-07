@@ -1,4 +1,4 @@
-# Game Data
+# Game Settings
 players = []
 score1 = 0
 score2 = 0
@@ -7,6 +7,7 @@ player_name = ""
 player_name2 = ""
 symbol = ""
 symbol2 = ""
+
 while True:
     # Main Menu
     print(
@@ -21,8 +22,11 @@ while True:
         "4. Exit"
     )
 
-    choice = int(input("Enter your choice: "))
-
+    choice = input("Enter your choice: ")
+    if not choice.isdigit():
+        print("Please enter numbers only.")
+        continue
+    choice = int(choice)
     if choice == 1:
         # Game Menu
         while True:
@@ -37,8 +41,13 @@ while True:
                 "\n"
                 "4. Back to Main Menu"
             )
-            select = int(input("Select an option: "))
+            select = input("Select an option: ")
+            if not select.isdigit():
+                print("Please enter numbers only.")
+                continue
+            select = int(select)
             start_game = False
+
             if select == 1:
                 # Player Settings
                 while True:
@@ -48,6 +57,7 @@ while True:
                             print("Name cannot be empty. Please enter your name.")
                             continue
                         break
+
                     while True:
                         symbol = input("Enter Player 1 symbol(X / O / * / $ / ~ / +): ")
                         if symbol == "":
@@ -67,6 +77,7 @@ while True:
                                 "Invalid symbol! Please choose one of the allowed symbols (X, O, *, $, ~, +)."
                             )
                             continue
+
                     while True:
                         player_name2 = input("Enter Player 2 name: ")
                         if player_name2 == "":
@@ -124,7 +135,7 @@ while True:
                     break
 
             if select == 3:
-                # Game Rounds
+                # Check Game Settings
                 if (
                     player_name == ""
                     or player_name2 == ""
@@ -137,12 +148,16 @@ while True:
                     )
                 else:
                     start_game = True
+
             if start_game == True:
+                # Game Rounds
                 for j in range(1, rounds + 1):
                     print("Round", j)
                     current_turn = 1
+
                     # Initialize Game Board
                     board = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
                     while True:
                         print(
                             f"{board[0]}  |  {board[1]}  |  {board[2]} "
@@ -155,8 +170,9 @@ while True:
                             "\n"
                             f"{board[6]}  |  {board[7]}  |  {board[8]}"
                         )
-                        if current_turn == 1:
 
+                        # Player 1 Turn
+                        if current_turn == 1:
                             call_number1 = input(
                                 f"{player_name}:Choose a number(1_9): "
                             )
@@ -172,10 +188,11 @@ while True:
                                     "This cell is already taken! Please choose another number."
                                 )
                                 continue
+
                             current_turn = 2
                             board[call_number1 - 1] = symbol
 
-                            # Check Player 1 Winner
+                            # Check Player 1 Win
                             if (
                                 board[0] == board[1] == board[2] == symbol
                                 or board[3] == board[4] == board[5] == symbol
@@ -207,7 +224,6 @@ while True:
 
                         # Player 2 Turn
                         if current_turn == 2:
-
                             call_number2 = input(
                                 f"{player_name2}:Choose a number(1_9): "
                             )
@@ -223,10 +239,11 @@ while True:
                                     "This cell is already taken! Please choose another number."
                                 )
                                 continue
+
                             current_turn = 1
                             board[call_number2 - 1] = symbol2
 
-                            # Check Player 2 Winner
+                            # Check Player 2 Win
                             if (
                                 board[0] == board[1] == board[2] == symbol2
                                 or board[3] == board[4] == board[5] == symbol2
@@ -255,8 +272,11 @@ while True:
                             ):
                                 print("The game is a Draw!")
                                 break
+
             if select == 4:
                 break
+
+    # How to Play
     if choice == 2:
         print(
             "🎮 TIC TAC TOE - HOW TO PLAY"
@@ -277,14 +297,19 @@ while True:
             "\n"
             "8. If all 9 cells are filled and nobody wins, the game is a draw."
         )
+
+    # Scoreboard
     if choice == 3:
         print("Final Score 🏆")
         print(player_name, ":", score1, "\n", player_name2, ":", score2)
+
         if score1 > score2:
             print(player_name, "Overall Winner🥇")
         if score2 > score1:
             print(player_name2, "Overall Winner🥇")
         if score1 == score2:
             print("The game is a tie!")
+
+    # Exit Game
     if choice == 4:
         break
